@@ -13,6 +13,13 @@
 
 <body class="antialiased">
     <h1>Hello World</h1>
+    <form wire:submit="save">
+        <input type="text" wire:model="title">
+    
+        <input type="text" wire:model="content">
+    
+        <button type="submit">Save</button>
+    </form>
     <a href="/dashboard" wire:navigate>Dashboard</a>
 </body>
 
